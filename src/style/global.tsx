@@ -66,5 +66,8 @@ export const Style = createGlobalStyle`
     position: relative;
     z-index: 1;
     background-color: ${({ theme }) => theme.back};
+    color: ${({ theme }) => theme.front};
+    font-size: 16px;
+    font-family: Cairo, sans-serif;
   }
 `
