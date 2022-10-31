@@ -2,7 +2,7 @@ import { ChangeEvent, FC, useCallback, useRef } from 'react'
 import { useCharacter } from 'hooks/useCharacter'
 import { CharacterPreview } from 'components/molecules/CharacterPreview'
 import styled from 'styled-components'
-import { CharacterEditor } from 'components/organisms/CharacterEditor/CharacterEditor'
+import { CharacterEditor } from 'components/organisms/CharacterEditor'
 import { Button } from 'components/atoms/Button'
 
 const Center = styled.div`
