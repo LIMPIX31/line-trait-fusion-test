@@ -1,7 +1,7 @@
 import styled from 'styled-components'
 import { WrapperProps } from './Attribute.types'
 
-export const Wrapper = styled.div<WrapperProps>.attrs(({ theme, color }) => ({
+export const Wrapper = styled.div.attrs<WrapperProps>(({ theme, color }) => ({
   style: {
     color: color ?? theme.accent,
   },
