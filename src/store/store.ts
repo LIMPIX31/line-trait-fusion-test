@@ -4,33 +4,33 @@ import { makeAutoObservable } from 'mobx'
 export class Character implements CharacterType {
   name: string = 'Character Name'
   strength = {
-    level: 3,
+    level: 0,
     skills: {
-      attack: 1,
+      attack: 0,
     },
   }
   dexterity = {
-    level: 2,
+    level: 0,
     skills: {
-      archery: 1,
-      stealth: 2,
+      archery: 0,
+      stealth: 0,
     },
   }
   intellect = {
-    level: 4,
+    level: 0,
     skills: {
-      learnability: 2,
-      medicine: 1,
-      survivability: 3,
+      learnability: 0,
+      medicine: 0,
+      survivability: 0,
     },
   }
   charisma = {
-    level: 2,
+    level: 0,
     skills: {
-      appearance: 2,
-      discernment: 1,
-      intimidation: 2,
-      manipulation: 1,
+      appearance: 0,
+      discernment: 0,
+      intimidation: 0,
+      manipulation: 0,
     },
   }
   damaged = 0
