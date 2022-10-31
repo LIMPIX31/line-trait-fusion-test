@@ -5,8 +5,9 @@ import { AttributeGroup } from 'components/atoms/AttributeGroup'
 import { Attribute } from 'components/molecules/Attribute'
 import { Glyph } from 'components/atoms/Glyph'
 import { Heart } from 'components/other/glyphs'
+import { observer } from 'mobx-react-lite'
 
-export const CharacterPreview: FC<CharacterPreviewProps> = ({ character }) => {
+export const CharacterPreview: FC<CharacterPreviewProps> = observer(({ character }) => {
   return (
     <Wrapper>
       <TipaImage />
@@ -22,4 +23,4 @@ export const CharacterPreview: FC<CharacterPreviewProps> = ({ character }) => {
       </Properties>
     </Wrapper>
   )
-}
+})

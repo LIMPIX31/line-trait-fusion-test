@@ -50,4 +50,12 @@ export class Character implements CharacterType {
   get isDead() {
     return this.maxHealth - this.health <= 0
   }
+
+  get dodging() {
+    return 10 + this.dexterity.level
+  }
+
+  get vigor() {
+    return this.intellect.level + this.dexterity.level
+  }
 }
